@@ -1,4 +1,5 @@
-<form action="counter" method="get">
+<form action="counter" method="post">
+    {% csrf_token %}
     <textarea name="text" cols="30" rows="10"></textarea>
     <input type="submit" />
 </form>
